@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levantar Pedido</title>
+
+    <style>
+        body{
+            background-color: #001a3d;
+            text-align: center;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Logo-->
+
+    <img src="./assets/img/Vía Láctea.png" alt="Pasteleria Via Lactea" width="200px" height="200px">
+
+    <!-- Titulos -->
+    <h1>Pasteleria Via Lactea</h1>
+
+    <form id="Pedido" action="FormularioPedidos.html" method="get" target="_black">
+
+    <!--Datos del formulario-->
+    <h2>Ingrese sus datos de contacto</h2>
+    <label for="nom"> Nombre</label><br>
+    <input type="text" id="nom" name="nom"><br><br>
+
+    <label for="numTel">Numero de Telefono</label><br>
+    <input type="tel" id="numTel" name="numTel" maxlength="10"><br><br>
+    
+    <label for="correo">Correo electronico</label><br>
+    <input type="email" id="correo" name="correo"><br><br>
+
+    <label for="desc"> Descripcion del pastel</label><br>
+    <input type="text" id="desc" name="desc"><br><br>
+
+
+    <h2>Sabores</h2>
+    <input type="checkbox" id="sabor1" name="sabor1" value="Meteoro">
+    <label for="sabor1">Meteoro de Chocolate</label><br>
+
+    <input type="checkbox" id="sabor2" name="sabor2" value="Marte">
+    <label for="sabor2">Marte RedVelvet</label><br>
+
+    <input type="checkbox" id="sabor3" name="sabor3" value="Via Lactea">
+    <label for="sabor3">Via Lactea 3 Leches</label><br>
+
+    <input type="checkbox" id="sabor4" name="sabor4" value="Venus">
+    <label for="sabor4">Venus Relleno de Fresa</label><br>
+
+    <input type="checkbox" id="sabor5" name="sabor5" value="Sol">
+    <label for="sabor5">Sol Relleno de Durazno</label><br>
+
+    <h2>Adornos</h2>
+    <input type="checkbox" id="adorno1" name="adorno1" value="Sencillo">
+    <label for="adorno1">Adorno Sencillo</label><br>
+
+    <input type="checkbox" id="adorno2" name="adorno2" value="Betun">
+    <label for="adorno2">Flores de Betun</label><br>
+
+    <input type="checkbox" id="adorno3" name="adorno3" value="Flores">
+    <label for="adorno3">Flores Naturales</label><br>
+
+    <input type="checkbox" id="adorno4" name="adorno4" value="Fondant">
+    <label for="adorno4">Fondant</label><br>
+
+    <br>
+    <input type="reset">
+    
+
+    </form>
+
+    <input type="submit" value="Enviar Pedido" form="Pedido">
+
+</body>
+</html>
